@@ -15,7 +15,7 @@ app.use('/',router)
 var con = mysql.createConnection({
    host: "localhost",
    user: "root",
-   password: "Iamsammed@12",
+   password: "root",
    database: "jobforfreshers"
  });
  
