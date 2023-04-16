@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+#category:hover{
+    /* background-color: blue; */
+    background-color: #5015d8;
+    color: white;
+}
+
+#btn{
+    color:black;
+    border-color: black;
+}
+
+#btn:hover{
+    background-color:black;
+    color:white;
+}
+
+#btn:active{
+    background-color:rgb(119, 117, 117);
+}
+
+#contact{
+    color: white;
+    background-color: #5015d8;
+    border-radius:20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+}
+
+#contact:hover{
+    background-color:#E9f1fa;
+    color:black;
+    
+}
+
+

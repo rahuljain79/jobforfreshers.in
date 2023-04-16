@@ -1,0 +1,165 @@
+@media (min-width: 640px) {
+    body {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      color: #444444;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+    }
+    .job-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .company-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .location {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .main {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .job-summary h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .job-summary p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .responsibilities h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .responsibilities li {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .qualifications h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .qualifications li {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .job-description {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .job-description table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .job-description th,
+    .job-description td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    .job-description th {
+      background-color: #f2f2f2;
+    }
+    .footer {
+      padding: 20px;
+    }
+    .footer p {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    body {
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      color: #444444;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+    }
+    .job-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .company-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .location {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    /* .main {
+      margin */
+      .responsibilities, .qualifications {
+      margin-bottom: 30px;
+    }
+    .responsibilities h2, .qualifications h2, .job-description h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .responsibilities ul, .qualifications ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    .job-description {
+      margin-bottom: 30px;
+    }
+    .job-description table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .job-description th {
+      text-align: left;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-bottom: 2px solid #ccc;
+    }
+    .job-description td {
+      padding: 5px 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+      color: #999999;
+    }
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  table th {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
