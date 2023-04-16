@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Text Box */
+.text-box {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .text-box {
+    height: auto;
+  }
+}
+    </style>
+
+    <script>
+        // Automatic Slider
+$(document).ready(function() {
+  $('#slider').carousel({
+    interval: 3000 // Change interval time here (in milliseconds)
+  });
+});
+
+    </script>
+</head>
+<body>
+    <div class="container my-4">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-box p-4 bg-light rounded shadow">
+                <h2 class="text-xl font-bold mb-2">Text Box 1</h2>
+                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla turpis eu risus commodo, vel tempus quam lacinia. Fusce aliquet ex nec nibh tincidunt, at malesuada libero congue.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-box p-4 bg-light rounded shadow">
+                <h2 class="text-xl font-bold mb-2">Text Box 2</h2>
+                <p class="text-gray-700">Suspendisse ac tellus eu massa semper venenatis. Proin rhoncus justo vitae velit rutrum, at molestie lacus elementum. Praesent vel luctus mi.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-box p-4 bg-light rounded shadow">
+                <h2 class="text-xl font-bold mb-2">Text Box 3</h2>
+                <p class="text-gray-700">Duis sed ex quis sapien scelerisque rutrum. Nulla fringilla mauris nec tellus posuere, sit amet auctor dolor aliquet. Suspendisse eget odio non justo ultricies sagittis.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+</body>
+</html>
