@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/footer.css">
+    <link rel="icon" href="../public/img14.svg" size="128x128">
+    <style>
+      
+.footer_area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding:60px;
+}
+.footer_area .row {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.footer_area .row .col,
+.footer_area .row .col-1,
+.footer_area .row .col-10,
+.footer_area .row .col-11,
+.footer_area .row .col-12,
+.footer_area .row .col-2,
+.footer_area .row .col-3,
+.footer_area .row .col-4,
+.footer_area .row .col-5,
+.footer_area .row .col-6,
+.footer_area .row .col-7,
+.footer_area .row .col-8,
+.footer_area .row .col-9,
+.footer_area .row .col-auto,
+.footer_area .row .col-lg,
+.footer_area .row .col-lg-1,
+.footer_area .row .col-lg-10,
+.footer_area .row .col-lg-11,
+.footer_area .row .col-lg-12,
+.footer_area .row .col-lg-2,
+.footer_area .row .col-lg-3,
+.footer_area .row .col-lg-4,
+.footer_area .row .col-lg-5,
+.footer_area .row .col-lg-6,
+.footer_area .row .col-lg-7,
+.footer_area .row .col-lg-8,
+.footer_area .row .col-lg-9,
+.footer_area .row .col-lg-auto,
+.footer_area .row .col-md,
+.footer_area .row .col-md-1,
+.footer_area .row .col-md-10,
+.footer_area .row .col-md-11,
+.footer_area .row .col-md-12,
+.footer_area .row .col-md-2,
+.footer_area .row .col-md-3,
+.footer_area .row .col-md-4,
+.footer_area .row .col-md-5,
+.footer_area .row .col-md-6,
+.footer_area .row .col-md-7,
+.footer_area .row .col-md-8,
+.footer_area .row .col-md-9,
+.footer_area .row .col-md-auto,
+.footer_area .row .col-sm,
+.footer_area .row .col-sm-1,
+.footer_area .row .col-sm-10,
+.footer_area .row .col-sm-11,
+.footer_area .row .col-sm-12,
+.footer_area .row .col-sm-2,
+.footer_area .row .col-sm-3,
+.footer_area .row .col-sm-4,
+.footer_area .row .col-sm-5,
+.footer_area .row .col-sm-6,
+.footer_area .row .col-sm-7,
+.footer_area .row .col-sm-8,
+.footer_area .row .col-sm-9,
+.footer_area .row .col-sm-auto,
+.footer_area .row .col-xl,
+.footer_area .row .col-xl-1,
+.footer_area .row .col-xl-10,
+.footer_area .row .col-xl-11,
+.footer_area .row .col-xl-12,
+.footer_area .row .col-xl-2,
+.footer_area .row .col-xl-3,
+.footer_area .row .col-xl-4,
+.footer_area .row .col-xl-5,
+.footer_area .row .col-xl-6,
+.footer_area .row .col-xl-7,
+.footer_area .row .col-xl-8,
+.footer_area .row .col-xl-9,
+.footer_area .row .col-xl-auto {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.single-footer-widget {
+    position: relative;
+    z-index: 1;
+}
+.single-footer-widget .copywrite-text a {
+    color: #747794;
+    font-size: 1rem;
+}
+.single-footer-widget .copywrite-text a:hover,
+.single-footer-widget .copywrite-text a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .widget-title {
+    margin-bottom: 1.5rem;
+}
+.single-footer-widget .footer_menu li a {
+    color: #747794;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+.single-footer-widget .footer_menu li a:hover,
+.single-footer-widget .footer_menu li a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .footer_menu li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer_social_area {
+    position: relative;
+    z-index: 1;
+}
+.footer_social_area a {
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
+    background-color: #f5f5ff;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-right: 10px;
+}
+.footer_social_area a i {
+    line-height: 36px;
+}
+.footer_social_area a:hover,
+.footer_social_area a:focus {
+    color: #ffffff;
+}
+
+@-webkit-keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+ol li, ul li {
+    list-style: none;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="box-shadow:5px 10px 8px #888888; padding-top:0; padding-bottom: 0;">
+    <div class="container-fluid" style="background-color: #E9f1fa; padding-top: 5px; padding-bottom: 5px;">
+      <a class="navbar-brand" href="#">
+        <img src="../public/img14.svg" width="35" height="35" class="d-inline-block align-top" alt="">
+        JobforFreshers
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" style="padding-left:20px;">
+            <a class="nav-link active"  aria-current="page" href="/"><i class="fa fa-home" style="font-size:20px"></i> Home</a>
+          </li>
+          <li class="nav-item" style="padding-left:20px;" >
+            <a class="nav-link" style="color:black;" href="/jobs"><i class="fa fa-briefcase" style="font-size:16px"></i> Jobs</a>
+          </li>
+          <li class="nav-item dropdown" style="padding-left:20px;">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;">
+                <i class="fa fa-list" style="font-size:15px"></i> Job Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="category" href="/jobs/Software Engineer">Software Engineer</a></li>
+              <li><a class="dropdown-item" id="category" href="/jobs/Full Stack Developer">Full Stack Developer</a></li>
+              <li><a class="dropdown-item" id="category" href="/jobs/Java Developer">Java Developer</a></li>
+              <li><a class="dropdown-item" id="category" href="/jobs/Data Analyst">Data Analyst</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">View More</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" style="padding-left:20px;">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black;">
+                <i class="fa fa-map-marker" style="font-size:18px"></i> Location
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="category" href="/jobs/pune">Pune</a></li>
+                  <li><a class="dropdown-item" id="category" href="/jobs/Bangalore">Bangalore</a></li>
+                  <li><a class="dropdown-item" id="category" href="/jobs/Hyderabad">Hyderabad</a></li>
+                  <li><a class="dropdown-item" id="category" href="/jobs/Mumbai">Mumbai</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">View More</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about" style="color:black; padding-left:20px; cursor:pointer;"><i class="fa fa-info-circle" style="font-size:18px"></i> About Us</a>
+          </li>
+          <li class="nav-item" style="margin-left:20px;">
+            <a class="nav-link" id="contact"><i class="fa fa-phone" style="font-size:16px" href="/contact"></i> Contact Us</a>
+          </li>
+        </ul>
+        <form action="/jobs" method="post" class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searchbar">
+          <button class="btn btn-outline-success" id="btn" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+      <section class="main-content">
+
+        <style>
+          .main-content {
+    padding: 14px;
+    
+}
+
+.card{
+        /* margin-left:5vh;
+        margin-right:1vh;
+        margin-bottom: 2vh; */
+
+        margin: 2vh auto;
+
+    }
+
+/* Tablet */
+@media (min-width:600px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .card{
+        /* margin-left:5vh; */
+        display: inline-block;
+        margin:4vh 3vh;
+       
+    }
+
+  
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .main-content {
+        padding:24px
+    }
+    .card{
+            display: inline-block;
+            margin-top:20px;
+            margin-bottom: 20px;
+            /* margin-left: 5vh; */
+            margin: 2vh 5vh;
+          }
+}
+
+
+        
+        </style>
+        <% result.forEach((element) => { %>
+        <div class="card" style="width: 18rem;">
+            <img src="../public/company/tcs.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%=element.Company_Name%></h5>
+              <p class="card-text">
+                Role  -  <%=element.Job_Position%> <br>
+                Qualification - <%=element.Qualification%> <br>
+                Batch - <%=element.Batch%> <br>
+                Experience - <%=element.Experience%> <br>
+                Location - <%=element.Location%> <br>
+                Package - <%=element.Package_CTC%> <br>
+              </p>
+              <a href="/job_detail/<%=element.job_id%>" class="btn btn-primary">View more detail</a>
+            </div>
+          </div>
+          <% }); %>
+
+        </div>
+    
+      </section>
+
+      <!-- <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav><br><br> -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+           <% if (currentPage === 1) { %>
+           <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+           </li>
+           <% } else { %>
+           <li class="page-item">
+              <a class="page-link" href="?page=<%= currentPage - 1 %>">Previous</a>
+           </li>
+           <% } %>
+           <% for (let i = 1; i <= pageCount; i++) { %>
+           <% if (currentPage === i) { %>
+           <li class="page-item active">
+              <a class="page-link" href="?page=<%= i %>"><%= i %></a>
+           </li>
+           <% } else { %>
+           <li class="page-item">
+              <a class="page-link" href="?page=<%= i %>"><%= i %></a>
+           </li>
+           <% } %>
+           <% } %>
+           <% if (currentPage === pageCount) { %>
+           <li class="page-item disabled">
+              <a class="page-link">Next</a>
+           </li>
+           <% } else { %>
+           <li class="page-item">
+              <a class="page-link" href="?page=<%= currentPage + 1 %>">Next</a>
+           </li>
+           <% } %>
+        </ul>
+     </nav><br><br>
+     
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      
+     <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+     <script src="https://unpkg.com/tippy.js@4"></script>
+     <script>
+       //Init tooltips
+       tippy('.avatar')
+     </script>
+       <footer class="footer_area section_padding_130_0">
+             <div class="container">
+               <div class="row">
+                 <!-- Single Widget-->
+                 <div class="col-12 col-sm-6 col-lg-4">
+                   <div class="single-footer-widget section_padding_0_130">
+                     <!-- Footer Logo-->
+                     <div class="footer-logo mb-3"></div>
+                     <p>Appland is completely creative, lightweight, clean app landing page.</p>
+                     <!-- Copywrite Text-->
+                     <div class="copywrite-text mb-5">
+                       <p class="mb-0">Made with <i class="lni-heart mr-1"></i>by<a class="ml-1" href="https://wrapbootstrap.com/user/DesigningWorld">Designing World</a></p>
+                     </div>
+                     <!-- Footer Social Area-->
+                     <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
+                   </div>
+                 </div>
+                 <!-- Single Widget-->
+                 <div class="col-12 col-sm-6 col-lg">
+                   <div class="single-footer-widget section_padding_0_130">
+                     <!-- Widget Title-->
+                     <h5 class="widget-title">Category</h5>
+                     <!-- Footer Menu-->
+                     <div class="footer_menu">
+                       <ul style="list-style:none;">
+                        <li><a href="/jobs/Software Engineer">Sofware Engineer</a></li>
+                        <li><a href="/jobs/Full Stack Developer">Full Stack Developer</a></li>
+                        <li><a href="/jobs/Java Developer">Java Developer</a></li>
+                        <li><a href="/jobs/Data Analyst">Data Analyst</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- Single Widget-->
+                 <div class="col-12 col-sm-6 col-lg">
+                   <div class="single-footer-widget section_padding_0_130">
+                     <!-- Widget Title-->
+                     <h5 class="widget-title">Location</h5>
+                     <!-- Footer Menu-->
+                     <div class="footer_menu">
+                       <ul style="list-style:none;">
+                         <li><a href="/jobs/mumbai">Mumbai</a></li>
+                         <li><a href="/jobs/pune">Pune</a></li>
+                         <li><a href="/jobs/bangalore">Bangalore</a></li>
+                         <li><a href="/jobs/hyderabad">Hyderabad</a></li>
+                         <li><a href="/jobs/noida">Noida</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- Single Widget-->
+                 <div class="col-12 col-sm-6 col-lg">
+                   <div class="single-footer-widget section_padding_0_130">
+                     <!-- Widget Title-->
+                     <h5 class="widget-title">Community</h5>
+                     <!-- Footer Menu-->
+                     <div class="footer_menu">
+                       <ul style="list-style:none;">
+                         <li><a href="#">Terms and Conditions</a></li>
+                         <li><a href="/contact">Contact Us</a></li>
+                         <li><a href="/about">About Us</a></li>
+                         <li><a href="#">Feedback</a></li>
+                         <li><a href="#">FAQ</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Description</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    integrity="sha512-nWbxCYbscb+7eLLJGQ2ZsWUrTzTtCEl9jlOzqJp8WtYwJdOh7rlm3cI3VmxMj6F1gV7X9rnHbQV10zDymYdQyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../public/styles.css">
+  <link rel="icon" href="../public/img14.svg" size="128x128">
+</head>
+
+<body>
+  <div class="container">
+    <%result.forEach((element)=> { %>
+      <div class="header"
+        style="background-image: url('../../public/company/accenture.jpg'); background-repeat: no-repeat; background-size:contain;">
+        <h1 class="job-title">
+          <%=element.Company_Name_Recruitment_2023%>
+        </h1>
+        <h2 class="company-name">
+          <%=element.Job_Position%>
+        </h2>
+        <p class="location">
+          <%=element.Location%>
+        </p>
+      </div>
+      <div class="main">
+        <div class="job-summary">
+          <h2>Job Summary</h2>
+          <p>
+            <%=element.Job_Summary%>
+          </p>
+        </div>
+        <div class="responsibilities">
+          <h2>Responsibilities</h2>
+            <ul>
+              <% element.Job_Responsibilities.split('.').forEach(function(substring) { %>
+                <li>
+                  <%= substring.trim()%>.
+                </li>
+                <% }); %>
+            </ul>
+
+            <!-- <ul>
+          <li>Develop new features for web applications using modern web development frameworks.</li>
+          <li>Collaborate with project managers, designers, and other developers to build high-quality software.</li>
+          <li>Write clean, maintainable, and well-documented code.</li>
+          <li>Work with QA engineers to ensure software quality.</li>
+          <li>Participate in code reviews to maintain code quality.</li>
+          <li>Provide technical guidance to other developers as needed.</li>
+        </ul> -->
+        </div>
+        <div class="qualifications">
+          <h2>Eligibility Criteria</h2>
+          <ul>
+            <% element.Eligibility_Criteria.split('.').forEach(function(substring) { %>
+              <li>
+                <%= substring.trim()%>.
+              </li>
+              <% }); %>
+          </ul>
+          <!-- <ul>
+            <li>5+ years of experience in web development.</li>
+            <li>Strong experience with modern web development frameworks such as React or Angular.</li>
+            <li>Experience with back-end web development frameworks such as Node.js or Ruby on Rails.</li>
+            <li>Experience with Git and other version control systems.</li>
+            <li>Strong attention to detail and a passion for building great software.</li>
+            <li>Excellent written and verbal communication skills.</li>
+          </ul> -->
+        </div>
+        <div class="qualifications">
+          <h2>Preffered Skills</h2>
+          <ul>
+            <% element.Preferred_Skills.split('.').forEach(function(substring) { %>
+              <li>
+                <%= substring.trim()%>.
+              </li>
+              <% }); %>
+          </ul>
+          <!-- <ul>
+            <li>5+ years of experience in web development.</li>
+            <li>Strong experience with modern web development frameworks such as React or Angular.</li>
+            <li>Experience with back-end web development frameworks such as Node.js or Ruby on Rails.</li>
+            <li>Experience with Git and other version control systems.</li>
+            <li>Strong attention to detail and a passion for building great software.</li>
+            <li>Excellent written and verbal communication skills.</li>
+          </ul> -->
+        </div>
+        <div class="job-description">
+          <h2>Job Description</h2>
+          <table>
+            <tr>
+              <th>Job Title</th>
+              <td>
+                <%=element.Job_Position%>
+              </td>
+            </tr>
+            <tr>
+              <th>Company</th>
+              <td>
+                <%=element.Company_Name%>
+              </td>
+            </tr>
+            <tr>
+              <th>Location</th>
+              <td>
+                <%=element.Location%>
+              </td>
+            </tr>
+            <tr>
+              <th>Batch</th>
+              <td>
+                <%=element.Batch%>
+              </td>
+            </tr>
+            <tr>
+              <th>Date Posted</th>
+              <td>
+                <%=element.Job_Released_Date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric'})%>
+              </td>
+            </tr>
+            <tr>
+              <th>Last Date to apply</th>
+              <% if (element.Last_Date_to_Apply==='-' ) { %>
+                <td>
+                  <%= element.Last_Date_to_Apply %>
+                </td>
+                <% } else { %>
+                  <td>
+                    <%= element.Last_Date_to_Apply.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric'}) %>
+                  </td>
+                  <% } %>
+
+            </tr>
+            <tr>
+              <th>Experience</th>
+              <td>
+                <%=element.Experience%>
+              </td>
+            </tr>
+            <tr>
+              <th>Salary</th>
+              <td>
+                <%=element.Package_CTC%> per annum
+              </td>
+            </tr>
+          </table>
+          <a href="<%=element.Apply_Here_URL%>">
+            <h2 class="text-2xl font-bold mb-4">>>Apply Here<<< </h2>
+          </a>
+
+          <div class="job-summary">
+            <h2>About Company</h2>
+            <p>
+              <%=element.About_Company%>
+            </p>
+          </div>
+        </div>
+        <h2 class="text-2xl font-bold mb-4">Recent Jobs</h2>
+        <table class="mb-8">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Job Title</th>
+              <th>Location</th>
+              <th>Date Posted</th>
+              <th>Apply Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ul>
+              
+            <tr>
+              <% result1.forEach(function(e) { %>
+                <td>
+                  <%=e.Company_Name%>
+                </td>
+                <td>
+                  <%=e.Job_Position%>
+                </td>
+                <td>
+                  <%=e.Location%>
+                </td>
+                <td>
+                  <%=e.Job_Released_Date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric'})%>
+                </td>
+                <td>
+                  <!-- <a href="<%=e.Apply_Here_URL%>" style="color:blue;"> -->
+                  <a href="/job_detail/<%=e.job_id%>" style="color:blue;">
+                   Apply here
+                </a></td>
+                <% }); %>
+            
+            </tr>
+            <tr>
+              <td>XYZ Corporation</td>
+              <td>Frontend Developer</td>
+              <td>San Francisco, CA</td>
+              <td>March 28, 2023</td>
+              <a href="">
+                <td>Apply here</td>
+              </a>
+            </tr>
+            <tr>
+              <td>123 Agency</td>
+              <td>Web Designer</td>
+              <td>London, UK</td>
+              <td>March 25, 2023</td>
+              <a href="">
+                <td>Apply here</td>
+              </a>
+            </tr>
+            <tr>
+              <td>DEF Inc.</td>
+              <td>Backend Developer</td>
+              <td>Toronto, Canada</td>
+              <td>March 22, 2023</td>
+              <a href="">
+                <td>Apply here</td>
+              </a>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <p>Acme Inc. is an equal opportunity employer.</p>
+      </div>
+      <% }); %>
+  </div>
+</body>
+
+</html>
